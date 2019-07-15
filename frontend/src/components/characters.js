@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import ContestantList from './contestantList';
 import CharacterList from './characterList';
 
 function Characters({characters}) {

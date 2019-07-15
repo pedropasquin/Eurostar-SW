@@ -6,7 +6,7 @@ import ContestantAdd from './components/contestantAdd';
 import Contestant from './components/contestant';
 import Contestants from './components/contestants';
 import Header from './components/header';
-import Login from './components/login';
+
 
 import ConsumirApi from './components/consumirapi';
 import Characters from './components/characters';
@@ -76,7 +76,7 @@ function App() {
                                 const idContestant = props.match.params.id;
                                 // el producto que se le pasa al state
                                 const contestant = contestants.filter(contestant => contestant._id === idContestant);
-                                const firstName = contestant[0].FIRST_NAME;
+
                                 return (
                                     <ContestantEdit
                                         contestant={contestant[0]}

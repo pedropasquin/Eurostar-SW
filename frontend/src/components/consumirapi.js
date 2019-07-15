@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Error from './error';
-import axios from 'axios';
-import Characters from './characters';
+
 
 function ConsumirApi() {
 

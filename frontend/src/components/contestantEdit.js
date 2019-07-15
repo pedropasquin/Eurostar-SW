@@ -121,10 +121,10 @@ function ContestantEdit({contestant, history, saveRefreshContestants}) {
 
       <div className="col-md-8 mx-auto ">
             <h2 className="text-center">Editar Concursante</h2>
-            {(error == 0) ? <Error mensaje='Todo esta correcto  ' /> : null}
-            {(error == 1) ? <Error mensaje='Todos los campos son obligatorios' /> : null}
-            {(error == 2) ? <Error mensaje='Debes ser español' /> : null}
-            {(error == 3) ? <Error mensaje='Debes ser mayor de edad' /> : null}
+            {(error === 0) ? <Error mensaje='Todo esta correcto  ' /> : null}
+            {(error === 1) ? <Error mensaje='Todos los campos son obligatorios' /> : null}
+            {(error === 2) ? <Error mensaje='Debes ser español, ' /> : null}
+            {(error === 3) ? <Error mensaje='Debes ser mayor de edad' /> : null}
             <form
                 className="mt-5"
                 onSubmit={editContestant}

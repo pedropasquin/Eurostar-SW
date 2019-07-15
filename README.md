@@ -1,13 +1,20 @@
 # Star-Wars-Eurostar
+
+
 proyecto de prueba para Eurostar Mediagroup
 
-Para una correcta instalación clonar el proyecto entero,
+Para una correcta instalación clonar el proyecto entero de githuab:
+https://github.com/pedropasquin/Eurostar-SW
+
+Se necesita como requisito disponer de MongoDB en local (localhost:27017)
+
 dentro de la carpeta principal ejecutamos npm -install para que nos instale todas las dependecias del proyecto
 entramos en la carpeta frontend/
 ejecutamos:
 yarn
 o
 yarn install
+Con esto instalamos las dependencias del front de React
 
 
 Tecnologías utilizadas:
@@ -58,6 +65,9 @@ Creamos una carpeta routes para detallar las diferentes rutas/End Points que vam
 FRONT
 
 Creamos una carpeta frontend donde alojaremos la parte front en React
+Apesar que al añadir un concursante nos pida una imagen, no me ha dado tiempo a implementar 
+esta función del todo, debemos meter cualquier valor.
+
 
 Dependencias
 

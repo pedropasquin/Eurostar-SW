@@ -3,8 +3,7 @@ import Error from './error';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { withRouter } from 'react-router-dom';
-import Actor from './actor';
-import ContestantList from './contestantList';
+
 
 function ContestantAdd({ history, saveRefreshContestants, characters, saveCharacters, contestants}) {
    
@@ -24,7 +23,6 @@ function ContestantAdd({ history, saveRefreshContestants, characters, saveCharac
     const [ STAR_WARS_CHARACTER, saveCharacter ] = useState('');
     const [ IMAGE, saveImage ] = useState('');
     const [ error, saveError ] = useState(0);
-    const [ name ] = useState('');
     const [ personajes, guardarPersonajes ] = useState([]);
 
 
@@ -59,7 +57,7 @@ function ContestantAdd({ history, saveRefreshContestants, characters, saveCharac
             saveError(1);
             return;
         }
-        if(COUNTRY_OF_RESIDENCE != 'España'){
+        if(COUNTRY_OF_RESIDENCE.toLowerCase() !== 'españa'){
             saveError(2);
             return;
         }
@@ -115,9 +113,9 @@ function ContestantAdd({ history, saveRefreshContestants, characters, saveCharac
   return (
         <div className="col-md-8 mx-auto ">
             <h2 className="text-center">Añadir Nuevo Concursante</h2>
-            {(error == 1) ? <Error mensaje='Todos los campos son obligatorios' /> : null}
-            {(error == 2) ? <Error mensaje='Debes ser español' /> : null}
-            {(error == 3) ? <Error mensaje='Debes ser mayor de edad' /> : null}
+            {(error === 1) ? <Error mensaje='Todos los campos son obligatorios' /> : null}
+            {(error === 2) ? <Error mensaje='Debes ser español' /> : null}
+            {(error === 3) ? <Error mensaje='Debes ser mayor de edad' /> : null}
             <form
             className="mt-5"
                 onSubmit={addContestant}
