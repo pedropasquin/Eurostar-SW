@@ -1,7 +1,7 @@
-# Star-Wars-Eurostar
+# Star-Wars
 
 
-proyecto de prueba para Eurostar Mediagroup
+Proyecto en React + Node + MongoDb
 
 Para una correcta instalación clonar el proyecto entero de githuab:
 https://github.com/pedropasquin/Eurostar-SW
